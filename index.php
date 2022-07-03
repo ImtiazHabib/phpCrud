@@ -10,27 +10,59 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body> 
+   
+   <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            
+              <h1> Registration form</h1>
+              <!--  form start -->
+             
+                <form action="" method="POST">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name">                       
+                      </div>
+                      <div class="form-group">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" name="studentId" class="form-control" id="StudentId">
+                      </div>
+                       <div class="form-group">
+                        <label for="department">Department</label>
+                        <input type="text" name="department" class="form-control" id="department">
+                      </div>
+                       <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email">
+                      </div>
+                       <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text"  name="phone"class="form-control" id="phone">
+                      </div>
+                      <button type="submit"  name="send" class="btn btn-primary">Submit</button>
 
-    <!--  form start -->
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+                      <?php
 
-    <!--  form end -->
+                          if(isset($_POST['send'])){
+
+                             
+                
+
+                          }
+
+
+                      ?>
+              </form>
+              <!--  form end -->
+          </div>
+        </div>
+      </div>
+   </section>
+    
+
+    
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -45,3 +77,4 @@
     -->
   </body>
 </html>
+
